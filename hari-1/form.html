@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="post">
+        <h1 align="center"> FORM BARANG </h1>
+        Kode Barang: <input type="text"/>
+        <br>
+        Nama Barang: <input type="text"/>
+        <br>
+        Harga      : <input type="text"/>
+        <br>
+        Merek      : <input type="text"/>
+        <br>
+        Type Barang: <input type="radio" value="import" name="import"/> <label for="import">import</label>
+        <input type="radio" value="import" name="import"/> <label for="import">lokal</label>
+        <br>
+        Catatan Barang : <textarea></textarea>
+        <br>
+        Asal Barang: <select name="asal-barang" id="asal-barang" required>
+            <option value="">pilih asal barang</option>
+            <option value="bandung">bandung</option>
+            <option value="jakarta ">jakarta </option>
+            <option value="bgr">bogor</option>
+        </select>
+        <br>
+        <button type="submit">submit bro</button>
+        <button type="reset">reset bro</button>
+    </form>
+</body>
+</html>
