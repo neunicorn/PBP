@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+    <style>
+      .container {
+        width: 55%;
+        height: 60vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container2 {
+        width: 55%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .container-all {
+        width: 70%;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      body {
+        background-color: #e4e6eb;
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container2 li {
+        list-style: none;
+      }
+      .container2 li ul {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-all">
+      <div class="container2">
+        <br />
+        <h1>Tugas Form Pendaftaran</h1>
+        <figure>
+          <center>
+            <img src="./foto baugs.jpg" alt="foto-saya" width="250px" />
+          </center>
+          <figcaption><b>Muhamad Zulfan Taqiyudin Baehaki</b></figcaption>
+          <figcaption><i>student | web developer</i></figcaption>
+        </figure>
+        <p>
+          Nama saya Muhamad Zulfan Taqiyudin Baehaki, Berasal dari Kota Bogor.
+          Saat ini saya sedang menempuh pendidikan S1 di UIN Syarif Hidayatullah
+          Jakarta.
+        </p>
+        <p>
+          Untuk mengetahui lebih banyak tentang diri saya, bisa di akses di:
+        </p>
+        <li>
+          <ul>
+            <a href="https://www.instagram.com/baehq12/"
+              ><img
+                src="./Instagram_logo_2016.svg.png"
+                alt="instagram"
+                width="25px"
+            /></a>
+          </ul>
+          <ul>
+            <a href="https://www.github.com/neunicorn/"
+              ><img src="./25231.png" alt="github" width="25px"
+            /></a>
+          </ul>
+          <ul>
+            <a href="https://www.linkedin.com/in/muhamadzulfan/"
+              ><img src="./174857.png" alt="linkedin" width="25px"
+            /></a>
+          </ul>
+        </li>
+      </div>
+      <h2 align="center">Isilah form dibawah ini:</h2>
+      <div
+        style="border-top: 1px solid black; padding-top: 16px"
+        class="container"
+      >
+        <form action="">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <label for="nama">Nama Lengkap</label>
+                </td>
+                <td><input type="text" id="nama" name="nama" required /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="alamat-rumah">Alamat Rumah</label>
+                </td>
+                <td>
+                  <textarea
+                    type="text"
+                    id="alamatRumah"
+                    name="alamatRumah"
+                    rows="3"
+                    cols="21"
+                    required
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="alamat-kantor">Alamat Kantor </label>
+                </td>
+                <td>
+                  <textarea
+                    type="text"
+                    id="alamatKantor"
+                    name="alamatKantor"
+                    rows="3"
+                    cols="21"
+                    required
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="noHp">No Telepon </label>
+                </td>
+                <td><input type="text" id="noHp" name="noHp" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="pw">Password </label>
+                </td>
+                <td><input type="password" id="password" name="password" /></td>
+              </tr>
+              <tr>
+                <td colspan="2">Hobby Anda (boleh lebih dari satu)</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="hobby1" name="hobby1" />
+                  <label for="hobby1">Membaca</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="hobby2" name="hobby2" />
+                  <label for="hobby2">Memasak</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="hobby3" name="hobby3" />
+                  <label for="hobby3">Basket</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="hobby2" name="hobby2" />
+                  <label for="hobby2">Hiking</label>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">Jenis Kelamin</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="radio" id="jk1" name="jk" />
+                  <label for="jk1">Laki-laki</label>
+                </td>
+                <td>
+                  <input type="radio" id="jk2" name="jk" />
+                  <label for="jk2">Perempuan</label>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">
+                  <button type="submit">submit</button>
+                  <button type="reset">reset</button>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
